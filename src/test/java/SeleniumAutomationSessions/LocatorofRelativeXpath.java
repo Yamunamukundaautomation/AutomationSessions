@@ -9,7 +9,7 @@ public class LocatorofRelativeXpath {
 		ChromeDriver cd=new ChromeDriver();
 		cd.get("https://www.facebook.com/login/");
 		cd.manage().window().maximize();
-		String title=cd.getCurrentUrl();
+		String title=cd.getTitle();
 		System.out.println(title);
 		String url=cd.getCurrentUrl();
 		System.out.println(url);
